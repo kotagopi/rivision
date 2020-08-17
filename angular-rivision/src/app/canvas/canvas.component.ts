@@ -19,6 +19,5 @@ export class CanvasComponent implements OnInit, AfterViewInit {
     const cimg = this.viewChild.nativeElement.getContext('2d');
     cimg.fillStyle = 'green';
     cimg.fillRect(0, 0, 150, 100);
-    cimg.clearRect(0, 0);
   }
 }
