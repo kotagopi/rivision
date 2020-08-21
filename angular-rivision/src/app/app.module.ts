@@ -12,7 +12,7 @@ import { CanvasComponent } from './canvas/canvas.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
