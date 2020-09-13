@@ -10,6 +10,8 @@ export class OrdersComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    localStorage.setItem('userNm', 'krishna');
+    localStorage.setItem('password', 'Krishna@777');
   }
 
 }

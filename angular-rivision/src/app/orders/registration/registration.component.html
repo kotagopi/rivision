@@ -1,20 +1,27 @@
 
-<div class="bg-color p-3">
-  <h2>Register</h2>
-  <p>Looks like you are first time here, create an account below to order products here</p>
-  <div class="p-t-24 d-flex flex-column">
-    <label>User Name</label>
-    <input type="text" name="" id="">
+<div class="enter-page">
+  <div class="d-flex justify-content-center">
+    <div class="col-sm-4">
+      <div class="bg-color p-3">
+        <h2>Register</h2>
+        <p>Looks like you are first time here, create an account below to order products here</p>
+        <div class="p-t-24 d-flex flex-column">
+          <label>User Name</label>
+          <input type="text" class="form-control" [(ngModel)]="userNm">
+        </div>
+        <div class="p-t-24 d-flex flex-column">
+          <label>Email id</label>
+          <input type="text" class="form-control" [(ngModel)]="emailId">
+        </div>
+        <div class="p-t-24 d-flex flex-column">
+          <label>Password</label>
+          <input type="text" class="form-control" [(ngModel)]="password">
+        </div>
+        <div class="p-t-24 p-r-12 row justify-content-end">
+        <button type="button" class="btn" (click)="register()">Register</button>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="p-t-24 d-flex flex-column">
-    <label>Email id</label>
-    <input type="text" name="" id="">
-  </div>
-  <div class="p-t-24 d-flex flex-column">
-    <label>Password</label>
-    <input type="text" name="" id="">
-  </div>
-  <div class="p-t-24 p-r-12 row justify-content-end">
-  <button type="button">Register</button>
-  </div>
+  <p class="row justify-content-center p-t-24">already have an account account? <span class="register" (click)="backToLogin()">Login</span></p>
 </div>
