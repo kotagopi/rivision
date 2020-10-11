@@ -20,10 +20,10 @@ export class LoginComponent implements OnInit {
     const name = localStorage.getItem('userNm');
     const password = localStorage.getItem('password');
     if (name === this.userName && password === this.userPswd) {
-      this.route.navigateByUrl('heroes');
+      this.route.navigateByUrl('agri');
       this.snackbar.open('login successfully', 'Dismiss');
     } else {
-      console.log('user is invalid');
+      this.snackbar.open('user is invalid', 'Dismiss');
     }
   }
 

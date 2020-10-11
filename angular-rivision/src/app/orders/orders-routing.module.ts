@@ -3,8 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { OrdersComponent } from './orders.component';
-import { TourOfHeroesComponent } from './tour-of-heroes/tour-of-heroes.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { AgriWrapperComponent } from './agri-wrapper/agri-wrapper.component';
 
 const routes: Routes = [
   { path: '', component: OrdersComponent,
@@ -23,8 +23,8 @@ const routes: Routes = [
         component: RegistrationComponent
       },
       {
-        path: 'heroes',
-        component: TourOfHeroesComponent
+        path: 'agri',
+        component: AgriWrapperComponent
       }
     ] }
 ];
